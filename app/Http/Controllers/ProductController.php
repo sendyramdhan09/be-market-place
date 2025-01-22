@@ -69,7 +69,7 @@ class ProductController extends Controller
         ], 404);
     }
 
-       public function update(Request $request, product $product)
+       public function update(Request $request, string $product)
     {
         $request->validate([
             "category_id" => "required|exists:categories,id",
